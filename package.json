@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "start": "styleguide",
-    "dev": "nodemon -w components -w data -e js,json,html index.js & watchify js/index.js -vo compiled/bundle.js & node-sass scss/stylesheet.scss compiled/stylesheet.css"
+    "dev": "nodemon -w components -w data -e js,json,html index.js & watchify js/index.js -vo compiled/bundle.js & node-sass -rw scss scss/stylesheet.scss -o compiled"
   },
   "author": {
     "name": "Lars Kappert",
