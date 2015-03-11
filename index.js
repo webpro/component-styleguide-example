@@ -5,5 +5,8 @@ styleguide({
     components: path.resolve(__dirname, 'components'),
     ext: 'html',
     data: path.resolve(__dirname, 'data'),
-    static: path.resolve(__dirname, 'compiled')
+    staticLocalDir: path.resolve(__dirname, 'compiled'),
+    staticPath: '/compiled',
+    stylesheets: ['stylesheet.css'],
+    scripts: ['bundle.js']
 });
