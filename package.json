@@ -13,13 +13,13 @@
     "dev": "nodemon -w components -w data -e js,json,html index.js & watchify js/index.js -vo compiled/bundle.js & node-sass -rw scss scss/stylesheet.scss -o compiled"
   },
   "dependencies": {
-    "browserify": "^9.0.3",
-    "component-styleguide": "^1.1.0",
-    "node-sass": "^2.0.1"
+    "browserify": "^13.0.0",
+    "component-styleguide": "^1.4.0",
+    "node-sass": "^3.4.2"
   },
   "devDependencies": {
-    "nodemon": "^1.3.7",
-    "watchify": "^2.4.0"
+    "nodemon": "^1.9.1",
+    "watchify": "^3.7.0"
   },
   "author": {
     "name": "Lars Kappert",
