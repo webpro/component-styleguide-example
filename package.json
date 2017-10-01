@@ -9,8 +9,13 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node index.js",
-    "build": "browserify js/index.js -vo compiled/bundle.js && node-sass scss/stylesheet.scss -o compiled",
-    "dev": "nodemon -w components -w data -e js,json,html index.js & watchify js/index.js -vo compiled/bundle.js & node-sass -rw scss scss/stylesheet.scss -o compiled"
+    "build:js": "browserify js/index.js -o compiled/bundle.js",
+    "build:css": "node-sass scss/stylesheet.scss -o compiled",
+    "build": "npm run build:js && npm run build:css",
+    "watch:components": "nodemon -w components -w data -e js,json,html index.js",
+    "watch:js": "watchify js/index.js -vo compiled/bundle.js",
+    "watch:css": "node-sass -rw scss scss/stylesheet.scss -o compiled",
+    "dev": "npm run watch:components & npm run watch:js & npm run watch:css"
   },
   "dependencies": {
     "browserify": "^13.0.0",
