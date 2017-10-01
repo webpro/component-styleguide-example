@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node index.js",
+    "start": "node index.js",
+    "prebuild": "mkdirp compiled",
     "build:js": "browserify js/index.js -o compiled/bundle.js",
     "build:css": "node-sass scss/stylesheet.scss -o compiled",
     "build": "npm run build:js && npm run build:css",
@@ -19,10 +20,11 @@
   },
   "dependencies": {
     "browserify": "^14.4.0",
-    "component-styleguide": "^1.4.0",
+    "component-styleguide": "^2.0.2",
     "node-sass": "^4.5.3"
   },
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "nodemon": "^1.12.1",
     "watchify": "^3.9.0"
   },
