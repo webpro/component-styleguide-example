@@ -2,7 +2,7 @@
 
 Example project + structure for [component-styleguide](https://github.com/webpro/component-styleguide).
 
-See this example styleguide running at [http://component-styleguide-example.webpro.nl](http://component-styleguide-example.webpro.nl).
+See this example styleguide running at [component-styleguide.now.sh](https://component-styleguide.now.sh) (thanks [now.sh](https://zeit.co/now)!).
 
 ## Installation
 
