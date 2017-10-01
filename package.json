@@ -18,13 +18,13 @@
     "dev": "npm run watch:components & npm run watch:js & npm run watch:css"
   },
   "dependencies": {
-    "browserify": "^13.0.0",
+    "browserify": "^14.4.0",
     "component-styleguide": "^1.4.0",
-    "node-sass": "^3.4.2"
+    "node-sass": "^4.5.3"
   },
   "devDependencies": {
-    "nodemon": "^1.9.1",
-    "watchify": "^3.7.0"
+    "nodemon": "^1.12.1",
+    "watchify": "^3.9.0"
   },
   "author": {
     "name": "Lars Kappert",
