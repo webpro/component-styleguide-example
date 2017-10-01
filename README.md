@@ -12,3 +12,7 @@ See this example styleguide running at [http://component-styleguide-example.webp
     npm start
 
 The styleguide is now running at [http://localhost:3000](http://localhost:3000).
+
+## Development
+
+    npm run dev
